@@ -6,7 +6,7 @@ describe BookParser do
     expect(rumplestilskin.title).to eq("Rumplestilskin Russian Fairy Tale")
   end
 
-  it "finds a book by ISBN-10" do
+  it "finds a book by ISBN-13" do
     partials = BookParser.parse("978-0062071057")
     expect(partials.title).to eq("Partials")
     expect(partials.authors).to eq("Dan Wells")
